@@ -18,9 +18,41 @@ img {
     margin-right: auto;
 }
 
+* {
+    box-sizing: border-box;
+}
+
+
+.header {
+    text-align: center;
+    padding: 32px;
+}
+
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+
+
+
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
 
 </style>
-
+<body>
 
 <body style="background-color:black;">
 <a href="index.html">
@@ -36,7 +68,7 @@ img {
 <p class="a">
 <font color="white">TITLE  / DATE </font><br><br><br><br><br>
 
-<img src="https://i.imgur.com/32QmSnE.jpg" alt="vape">
+<img src="https://farm5.staticflickr.com/4775/39960850745_7273374a4b_o.png" height="720" width="1280" alt="vape">
 <p class="a">
 <font color="white">TITLE  / DATE </font><br><br><br><br><br>
 
@@ -44,6 +76,17 @@ img {
 <p class="a">
 <font color="white">TITLE  / DATE </font><br><br><br><br><br>
 
+<div class="row"> 
+  <div class="column">
+    <img src="https://i.imgur.com/clJJXtR.jpg" style="width:40%">
+    <img src="https://i.imgur.com/clJJXtR.jpg" style="width:40%">
+    <img src="https://i.imgur.com/clJJXtR.jpg" style="width:40%">
+    <img src="https://farm5.staticflickr.com/4775/39960850745_7273374a4b_o.png" style="width:40%">
+    <img src="https://i.imgur.com/jGycJEe.png" style="width:40%">
+    <img src="https://i.imgur.com/clJJXtR.jpg" style="width:40%">
+    <img src="https://farm5.staticflickr.com/4775/39960850745_7273374a4b_o.png" style="width:0%">
+  </div>
+</body>
 </head>
 
 </html>
