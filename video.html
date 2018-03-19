@@ -1,5 +1,59 @@
 <html>
+<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono" rel="stylesheet">
 <style>
+div.gallery {
+    border: 1px solid #191919;
+	
+}
+
+div.gallery:hover {
+    border: 1px solid #696969;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 7px;
+    text-align: center;
+	color: #696969;
+	font-family: 'IBM Plex Mono', monospace;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 1px;
+    float: left;
+    width: 24.99999%;
+	
+}
+
+@media only screen and (max-width: 700px) {
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+///////////////////////
 
 p {text-align:center;}
 h2 {
@@ -7,6 +61,8 @@ h2 {
 }
 p.a {
     font-family: "Helvetica"
+	color: white
+	
 }
 iframe {
    
@@ -27,7 +83,11 @@ a:hover {
 
 a:active {
     text-decoration: none;
-}
+
+
+	
+
+
 </style>
 <body style="background-color:black;">
 <a href="index.html">
@@ -38,29 +98,86 @@ a:active {
 <li><A HREF="info.html" style="color:white">+info</A></li>
 <li><a href="dots.html" style="color:white">   ~</a>
 </ul>
-
-   <iframe src="https://player.vimeo.com/video/258138643" width="1000" height="334" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-   <p class="a"><font color="#d7d7d7">Obscura Digital 2018 Winter Party</font></p>
-<br><br>
-
-<iframe src="https://player.vimeo.com/video/242516208?title=0&byline=0" width="960" height="540" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-<br><br>
-
-<iframe width="540" height="270" src="//player.with.in/index.html?id=631" frameborder="0" allow="vr" allowfullscreen allowvr></iframe>
-<p class="a"><font color="#d7d7d7"> Shigeto - Hovering / VR Music Video</font></p>
-<br><br>
-   
-   <iframe src="https://player.vimeo.com/video/220669947" width="960" height="540" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
- <p class="a"><font color="#d7d7d7">Antartic Coachella Dome</font></p>
-<br><br>
+<br><br><br>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_fjords.jpg">
+      <img src="glass2.png" alt="Trolltunga Norway" width="300" height="200">
+    </a>
+    <div class="desc">obscura winter party</div>
+  </div>
+</div>
 
 
-   <iframe src="https://player.vimeo.com/video/145208736?title=0&byline=0" width="960" height="540" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-   <p class="a"><font color="#d7d7d7"> The Game Awards 2015</font></p>
-<br><br>
-   
-   
-   
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_forest.jpg">
+      <img src="sh_thmb.jpg" alt="Forest" width="600" height="400">
+    </a>
+    <div class="desc">shiegeto - hovering</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_lights.jpg">
+      <img src="coach_thmb.jpg" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc">coachella</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_mountains.jpg">
+      <img src="terr2.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc">dolby blade runner</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_mountains.jpg">
+      <img src="photothmb2.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc">photography</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_mountains.jpg">
+      <img src="tga_thmb.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc">video game awards 2017</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_mountains.jpg">
+      <img src="vgathmb.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc">video game awards 2015</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_mountains.jpg">
+      <img src="disthmb.png" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc">dis_connect</div>
+  </div>
+</div>
+
+
+
+<div class="clearfix"></div>
+
+
    
    
    <head>
