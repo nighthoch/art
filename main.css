@@ -1,0 +1,139 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: black;
+}
+
+section {
+	margin-top: 60px;
+}
+
+p {
+	text-align: center;
+}
+
+tab {
+	margin-left: 200px;
+}
+
+h2 {
+	text-shadow: 1px 1px white;
+}
+
+img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+a:link {
+	text-decoration: none;
+}
+
+a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+a:active {
+	text-decoration: none;
+}
+
+.section-title {
+	font-family: 'IBM Plex Mono', monospace;
+	text-decoration: underline;
+	color: #9f9f9f;
+	text-align: middle;
+}
+
+.section-title2 {
+	font-family: 'IBM Plex Mono', monospace;
+	text-decoration: none;
+	color: #9f9f9f;
+}
+.header {
+	text-align: center;
+	padding: 32px;
+}
+
+.row {
+	display: -ms-flexbox;
+	/* IE10 */
+	display: flex;
+	-ms-flex-wrap: wrap;
+	/* IE10 */
+	flex-wrap: wrap;
+	padding: 0 4px;
+}
+
+.ind {
+    padding-left: 170px;
+}
+
+
+.column img {
+	margin-top: 8px;
+	vertical-align: middle;
+}
+
+.fixed {
+	position: fixed;
+	top: -10px;
+}
+
+div.gallery {
+    border: 1px solid #191919;
+	
+}
+
+div.gallery:hover {
+    border: 1px solid #4D4D4D;
+	
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 7px;
+    text-align: center;
+	color: #696969;
+	font-family: 'IBM Plex Mono', monospace;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 1px;
+    float: left;
+    width: 24.99999%;
+	
+}
+
+@media only screen and (max-width: 1650px) {
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
