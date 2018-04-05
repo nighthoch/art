@@ -55,7 +55,16 @@ a:active {
 	font-family: 'IBM Plex Mono', monospace;
 	text-decoration: none;
 	color: #9f9f9f;
+	font-size: 25px;
 }
+
+.section-title3 {
+	font-family: 'IBM Plex Mono', monospace;
+	text-decoration: none;
+	color: #9f9f9f;
+	text-align: left;
+}
+
 .header {
 	text-align: center;
 	padding: 32px;
@@ -72,10 +81,18 @@ a:active {
 }
 
 .ind {
-    padding-left: 170px;
+    padding-left: 200px;
+	padding-right: 140px;
 }
 
-
+.ind2 {
+    padding-left: 10%;
+	padding-right: 10%;
+}
+.ind3 {
+    text-align: center;
+	padding: 32px;
+}
 .column img {
 	margin-top: 8px;
 	vertical-align: middle;
@@ -101,6 +118,11 @@ div.gallery img {
     height: auto;
 }
 
+div.bg {
+    background-image: url("paper.gif");
+    background-repeat: repeat-y;
+}
+
 div.desc {
     padding: 7px;
     text-align: center;
@@ -113,7 +135,7 @@ div.desc {
 }
 
 .responsive {
-    padding: 0 1px;
+    padding: 3px 3px;
     float: left;
     width: 24.99999%;
 	
