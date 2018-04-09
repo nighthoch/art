@@ -3,10 +3,7 @@
 }
 
 body {
-	background-color: #070707;
-}
-div.bgbg {
-    background-color: lightblue;
+	background-size:cover
 }
 section {
 	margin-top: 60px;
