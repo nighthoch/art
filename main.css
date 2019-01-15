@@ -9,7 +9,7 @@ div.bgbg {
     background-color: lightblue;
 }
 section {
-	margin-top: 60px;
+	margin-top: 30px;
 }
 
 p {
@@ -28,8 +28,13 @@ img {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+	
 }
-
+img:hover {
+  
+    
+    }
+	
 a:link {
 	text-decoration: none;
 }
@@ -58,6 +63,7 @@ a:active {
 	text-decoration: none;
 	color: #9f9f9f;
 	font-size: 25px;
+	
 }
 
 .section-title3 {
@@ -126,19 +132,30 @@ a:active {
 }
 
 div.gallery {
-    border: 1px solid #191919;
+    border: 0px solid #191919;
+	 /* filter: url(filters.svg#grayscale); Firefox 3.5+ */
+      filter: b; /* IE5+ */
+      -webkit-transition: all .4s linear;  
+	  -webkit-filter: brightness(100%)
+	
 	
 }
 
 div.gallery:hover {
-    border: 1px solid #4D4D4D;
+    border: 0px solid #3f3f3f;
+	  filter: none;
+	  -webkit-filter: brightness(60%)
+    
 	
 }
 
 div.gallery img {
     width: 100%;
     height: auto;
+	padding-right: 5px;
 }
+
+
 
 div.bg {
     background-image: url("paper.gif");
@@ -146,9 +163,10 @@ div.bg {
 }
 
 div.desc {
-    padding: 7px;
+    padding: 1px;
+	padding-bottom: 3px;
     text-align: center;
-	color: #696969;
+	color: #8E8E8E;
 	font-family: 'IBM Plex Mono', monospace;
 }
 
@@ -157,7 +175,7 @@ div.desc {
 }
 
 .responsive {
-    padding: 3px 3px;
+    padding: 1px 1px;
     float: left;
     width: 24.99999%;
 	
@@ -166,7 +184,7 @@ div.desc {
 @media only screen and (max-width: 1650px) {
     .responsive {
         width: 49.99999%;
-        margin: 6px 0;
+        margin: 3px 0;
     }
 }
 
