@@ -21,10 +21,10 @@ tab {
 }
 
 h2 {
-	text-shadow: 1px 1px white;
+	
 }
 
-img {
+img, video {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
@@ -100,11 +100,13 @@ a:active {
 }
 
 .ind {
-    padding-left: 200px;
+    padding-left: 300px;
 	padding-right: 140px;
+	
 }
 
 .ind2 {
+	
     padding-left: 10%;
 	padding-right: 10%;
 }
@@ -129,22 +131,41 @@ a:active {
 .fixed {
 	position: fixed;
 	top: -10px;
+	left: 20px;
+}
+
+.vidyo {
+	position: absolute;
+
+	align-items: center;
 }
 
 div.gallery {
-    border: 0px solid #191919;
+    border: 1px solid #000000;
 	 /* filter: url(filters.svg#grayscale); Firefox 3.5+ */
       filter: b; /* IE5+ */
       -webkit-transition: all .4s linear;  
 	  -webkit-filter: brightness(100%)
+	  
+	
+	
+}
+
+div.gallery2 {
+    border: 0px solid #000000;
+	 /* filter: url(filters.svg#grayscale); Firefox 3.5+ */
+      filter: b; /* IE5+ */
+      -webkit-transition: all .4s linear;  
+	  -webkit-filter: brightness(100%)
+	  
 	
 	
 }
 
 div.gallery:hover {
-    border: 0px solid #3f3f3f;
+    border: 1px solid #3f3f3f;
 	  filter: none;
-	  -webkit-filter: brightness(60%)
+	  -webkit-filter: brightness(75%)
     
 	
 }
@@ -152,7 +173,8 @@ div.gallery:hover {
 div.gallery img {
     width: 100%;
     height: auto;
-	padding-right: 5px;
+	padding-right: 1px;
+	padding-bottom: 8px;
 }
 
 
@@ -164,7 +186,7 @@ div.bg {
 
 div.desc {
     padding: 1px;
-	padding-bottom: 3px;
+	padding-bottom: 20px;
     text-align: center;
 	color: #8E8E8E;
 	font-family: 'IBM Plex Mono', monospace;
@@ -175,21 +197,30 @@ div.desc {
 }
 
 .responsive {
-    padding: 1px 1px;
+    padding: 5px 5px;
     float: left;
     width: 24.99999%;
+	margin-left: auto;
+  margin-right: auto;
+	
+}
+
+.responsive2 {
+    padding: 15px 55px;
+    float: left;
+    width: 50%;
 	
 }
 
 @media only screen and (max-width: 1650px) {
-    .responsive {
+    .responsive, responsive2 {
         width: 49.99999%;
         margin: 3px 0;
     }
 }
 
 @media only screen and (max-width: 500px) {
-    .responsive {
+    .responsive, responsive2 {
         width: 100%;
     }
 }
@@ -201,7 +232,7 @@ div.desc {
 }
 .videoWrapper {
 	position: relative;
-	padding-bottom: 56.25%; /* 16:9 */
+	padding-bottom: auto; /* 16:9 */
 	padding-top: 0px;
 	height: 0;
 	margin: auto;
@@ -213,5 +244,34 @@ div.desc {
 	width: 80%;
 	height: 100%;
 	margin: auto;
+}
+
+
+* {
+cursor:url(cursor.png), auto;
+}
+
+img:hover {
+cursor:url(cursor2.png), auto;
+}
+
+
+.column {
+	
+  float: middle;
+  width: 50%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+	
+  content: "";
+  clear: both;
+  display: table;
+}
+
+function playAudio(url) {
+  new Audio(url).play();
 }
 
